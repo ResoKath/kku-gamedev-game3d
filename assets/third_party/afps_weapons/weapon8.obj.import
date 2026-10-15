@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dct64aj1eysap"
+path="res://.godot/imported/weapon8.obj-dfc956775df8e6dd2cd06ebf790ecc67.mesh"
+
+[deps]
+
+files=["res://.godot/imported/weapon8.obj-dfc956775df8e6dd2cd06ebf790ecc67.mesh"]
+
+source_file="res://assets/third_party/afps_weapons/weapon8.obj"
+dest_files=["res://.godot/imported/weapon8.obj-dfc956775df8e6dd2cd06ebf790ecc67.mesh", "res://.godot/imported/weapon8.obj-dfc956775df8e6dd2cd06ebf790ecc67.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

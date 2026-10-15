@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://btixp2k3mhmm6"
+path="res://.godot/imported/crypt-a.obj-8294f112dcbc7717f6c4e6cffe94dc16.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt-a.obj-8294f112dcbc7717f6c4e6cffe94dc16.mesh"]
+
+source_file="res://assets/kenney/graveyard-kit/Models/OBJ format/crypt-a.obj"
+dest_files=["res://.godot/imported/crypt-a.obj-8294f112dcbc7717f6c4e6cffe94dc16.mesh", "res://.godot/imported/crypt-a.obj-8294f112dcbc7717f6c4e6cffe94dc16.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

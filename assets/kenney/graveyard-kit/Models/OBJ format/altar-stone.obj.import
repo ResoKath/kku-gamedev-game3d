@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ehosh305h7nc"
+path="res://.godot/imported/altar-stone.obj-b676485c6a358eb47ac12a38e21ab852.mesh"
+
+[deps]
+
+files=["res://.godot/imported/altar-stone.obj-b676485c6a358eb47ac12a38e21ab852.mesh"]
+
+source_file="res://assets/kenney/graveyard-kit/Models/OBJ format/altar-stone.obj"
+dest_files=["res://.godot/imported/altar-stone.obj-b676485c6a358eb47ac12a38e21ab852.mesh", "res://.godot/imported/altar-stone.obj-b676485c6a358eb47ac12a38e21ab852.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

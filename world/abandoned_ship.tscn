@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://Scenes/Hangar.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://Scenes/Outside.tscn" id="2"]
+[ext_resource type="Script" path="res://world/abandoned_ship.gd" id="3"]
+
+[sub_resource type="BoxShape3D" id="4"]
+size = Vector3(24, 3, 0.5)
+
+[node name="AbandonedShip" type="Node3D"]
+script = ExtResource("3")
+
+[node name="Hangar" parent="." instance=ExtResource("1")]
+
+[node name="Outside" parent="." instance=ExtResource("2")]
+
+[node name="HangarEdgeGuard" type="StaticBody3D" parent="."]
+position = Vector3(-5, 1.5, 10.35)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HangarEdgeGuard"]
+shape = SubResource("4")

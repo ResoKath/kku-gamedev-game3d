@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cqmibe46rieue"
+path="res://.godot/imported/hay-bale-bundled.obj-9fbd52e93213c95ef81c9002d380641e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hay-bale-bundled.obj-9fbd52e93213c95ef81c9002d380641e.mesh"]
+
+source_file="res://assets/kenney/graveyard-kit/Models/OBJ format/hay-bale-bundled.obj"
+dest_files=["res://.godot/imported/hay-bale-bundled.obj-9fbd52e93213c95ef81c9002d380641e.mesh", "res://.godot/imported/hay-bale-bundled.obj-9fbd52e93213c95ef81c9002d380641e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

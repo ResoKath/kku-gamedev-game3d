@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bbdacpwm2g0wn"
+path="res://.godot/imported/template-floor-layer-raised.obj-548790546ceb87c4a0fc9b3951ef772b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/template-floor-layer-raised.obj-548790546ceb87c4a0fc9b3951ef772b.mesh"]
+
+source_file="res://assets/kenney/modular-space-kit/Models/OBJ format/template-floor-layer-raised.obj"
+dest_files=["res://.godot/imported/template-floor-layer-raised.obj-548790546ceb87c4a0fc9b3951ef772b.mesh", "res://.godot/imported/template-floor-layer-raised.obj-548790546ceb87c4a0fc9b3951ef772b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
