@@ -18,3 +18,7 @@ mono_crash.*.json
 build/
 *.zip
 *.tpz
+*.7z
+*.rar
+test_export/
+Scenes/Unused/

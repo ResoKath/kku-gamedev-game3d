@@ -23,6 +23,17 @@ jobs:
         with:
           lfs: true
 
+      - name: Clean up unused assets before export
+        run: |
+          rm -rf assets/3dassets/abandoned-spaceship-demo
+          rm -rf Scenes/Unused
+          rm -rf Scenes/*.exr*
+          rm -rf Materials/Videos
+          rm -rf Materials/Outside
+          rm -rf Materials/Vegetation
+          rm -rf artifacts
+          find . -name "*.7z" -delete -o -name "*.rar" -delete
+
       - name: Export Godot Web
         id: godot_export
         uses: firebelley/godot-export@v6.0.0
