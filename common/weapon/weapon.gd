@@ -75,8 +75,10 @@ var aim_tween: Tween
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.aim_mode_changed.connect(_on_aim_mode_changed)
-	$TestCamera.visible = false
-	$TestTarget.visible = false
+	if has_node("TestCamera"):
+		$TestCamera.visible = false
+	if has_node("TestTarget"):
+		$TestTarget.visible = false
 	
 	# Initialize magazine
 	current_mag = mag_capacity

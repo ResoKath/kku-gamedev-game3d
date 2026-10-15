@@ -18,6 +18,11 @@
 radius = 0.2
 height = 1.85
 
+[sub_resource type="Environment" id="Environment_weapon"]
+ambient_light_source = 2
+ambient_light_color = Color(0.9, 0.95, 1, 1)
+ambient_light_energy = 1.0
+
 [node name="Player" type="CharacterBody3D" unique_id=1157596601 groups=["door_access", "player"]]
 script = ExtResource("1_oul6g")
 floor_max_angle = 1.13446
@@ -41,6 +46,7 @@ cull_mask = 1048573
 position = Vector3(0.18, -0.12, 0)
 light_color = Color(0.76, 0.9, 1, 1)
 light_energy = 2.2
+light_cull_mask = 3
 spot_range = 16.0
 spot_angle = 27.0
 shadow_enabled = true
@@ -67,6 +73,13 @@ collision_mask = 6
 
 [node name="LMG" parent="WeaponsManager" unique_id=635718025 instance=ExtResource("7_ebec5")]
 
+[node name="WeaponLight" type="OmniLight3D" parent="WeaponsManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.1, -0.4)
+light_color = Color(0.9, 0.95, 1, 1)
+light_energy = 3.0
+light_cull_mask = 2
+omni_range = 4.0
+
 [node name="WeaponSubViewport" type="SubViewportContainer" parent="." unique_id=884807026]
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,6 +98,7 @@ script = ExtResource("17_tqiix")
 [node name="Camera3D" type="Camera3D" parent="WeaponSubViewport/SubViewport" unique_id=63892889]
 transform = Transform3D(1, 0, -1.4210856e-14, 0, 1, 0, 1.4210856e-14, 0, 1, 0, 1.7, 0)
 cull_mask = 2
+environment = SubResource("Environment_weapon")
 
 [node name="WeaponFillLight" type="OmniLight3D" parent="WeaponSubViewport/SubViewport/Camera3D"]
 position = Vector3(0.7, -0.3, -0.5)

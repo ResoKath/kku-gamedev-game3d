@@ -7,16 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://b45wfx1i0i7lv" path="res://resources/sfx/weapons/reload.wav" id="3_veb2i"]
 [ext_resource type="AudioStream" uid="uid://dufj8pnelaehr" path="res://resources/sfx/weapons/no_bullets.wav" id="4_tf77g"]
 [ext_resource type="PackedScene" uid="uid://bnkw33w13ruko" path="res://resources/player/fps_demo_arms.glb" id="7_tf77g"]
-[ext_resource type="Material" uid="uid://onk5amtjoel5" path="res://resources/materials/black_mat.material" id="8_s7o25"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_56b04"]
-shading_mode = 0
-albedo_color = Color(1, 0, 0, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_vohqy"]
-material = SubResource("StandardMaterial3D_56b04")
-radius = 1.0
-height = 2.0
+[ext_resource type="Material" uid="uid://ddi1thcgfss0y" path="res://resources/materials/fps_demo_mat.material" id="8_s7o25"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tf77g"]
 _surfaces = [{
@@ -288,11 +279,6 @@ one_shot = true
 [node name="ReloadTimer" type="Timer" parent="." unique_id=451020958]
 one_shot = true
 
-[node name="TestTarget" type="MeshInstance3D" parent="." unique_id=758220933]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.570126)
-layers = 2
-mesh = SubResource("SphereMesh_vohqy")
-
 [node name="SFX" type="Node3D" parent="." unique_id=881117929]
 
 [node name="FiringSFX" type="AudioStreamPlayer3D" parent="SFX" unique_id=1361007207]
@@ -542,8 +528,6 @@ surface_material_override/0 = ExtResource("8_s7o25")
 
 [node name="MuzzleFlashPosition" type="Marker3D" parent="fps_demo_arms" unique_id=219008948]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0, -0.5)
-
-[node name="TestCamera" type="Camera3D" parent="." unique_id=1259688317]
 
 [connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]
 [connection signal="timeout" from="ReloadTimer" to="." method="_on_reload_timer_timeout"]
